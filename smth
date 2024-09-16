@@ -1,0 +1,243 @@
+{'form': <ListEntryForm bound=False, valid=Unknown, fields=(pricelist_entry;quantity;comment;extra_costs;person;id)>, 
+'formset': <ListEntryFormFormSet: bound=False valid=Unknown total_forms=1>, 'pricelist_entries_json': 
+'[{"pk": 21, "display": "My first pricelist - Cameras - Canon EOS R5"}, {"pk": 22, "display": "My first pricelist - Cameras - Nikon Z7 II"}, {"pk": 23, "display": "My first pricelist - Cameras - Sony A7R IV"}, {"pk": 24, "display": "My first pricelist - Cameras - Fujifilm X-T4"}, {"pk": 25, "display": "My first pricelist - Cameras - Panasonic Lumix S1R"}, {"pk": 26, "display": "My first pricelist - Lenses - Canon RF 24-70mm f/2.8L IS USM"}, {"pk": 27, "display": "My first pricelist - Lenses - Nikon Z 24-70mm f/2.8 S"}, {"pk": 28, "display": "My first pricelist - Lenses - Sony FE 24-70mm f/2.8 GM"}, {"pk": 29, "display": "My first pricelist - Lenses - Fujifilm XF 16-55mm f/2.8 R LM WR"}, {"pk": 30, "display": "My first pricelist - Lenses - Panasonic Lumix S PRO 24-70mm f/2.8"}, {"pk": 31, "display": "My first pricelist - Flashes - Canon Speedlite 600EX II-RT"}, {"pk": 32, "display": "My first pricelist - Flashes - Nikon SB-5000 AF Speedlight"}, {"pk": 33, "display": "My first pricelist - Flashes - Sony HVL-F60RM"}, {"pk": 34, "display": "My first pricelist - Flashes - Fujifilm EF-X500"}, {"pk": 35, "display": "My first pricelist - Flashes - Panasonic Lumix DMW-FL580L"}, {"pk": 36, "display": "My first pricelist - Accessories - Manfrotto MT055XPRO3 Tripod"}, {"pk": 37, "display": "My first pricelist - Accessories - Peak Design Everyday Backpack 20L"}, {"pk": 38, "display": "My first pricelist - Accessories - Sandisk Extreme Pro 128GB SDXC"}, {"pk": 39, "display": "My first pricelist - Accessories - Rode VideoMic Pro+"}, {"pk": 40, "display": "My first pricelist - Accessories - Godox AD200Pro TTL Pocket Flash Kit"}, {"pk": 41, "display": "Test pricelist - Cameras - Canon EOS R5"}, {"pk": 42, "display": "Test pricelist - Cameras - Nikon Z7 II"}, {"pk": 43, "display": "Test pricelist - Cameras - Sony A7R IV"}, {"pk": 44, "display": "Test pricelist - Cameras - Fujifilm X-T4"}, {"pk": 45, "display": "Test pricelist - Cameras - Panasonic Lumix S1R"}, {"pk": 46, "display": "Test pricelist - Lenses - Canon RF 24-70mm f/2.8L IS USM"}, {"pk": 47, "display": "Test pricelist - Lenses - Nikon Z 24-70mm f/2.8 S"}, {"pk": 48, "display": "Test pricelist - Lenses - Sony FE 24-70mm f/2.8 GM"}, {"pk": 49, "display": "Test pricelist - Lenses - Fujifilm XF 16-55mm f/2.8 R LM WR"}, {"pk": 50, "display": "Test pricelist - Lenses - Panasonic Lumix S PRO 24-70mm f/2.8"}, {"pk": 51, "display": "Test pricelist - Flashes - Canon Speedlite 600EX II-RT"}, {"pk": 52, "display": "Test pricelist - Flashes - Nikon SB-5000 AF Speedlight"}, {"pk": 53, "display": "Test pricelist - Flashes - Sony HVL-F60RM"}, {"pk": 54, "display": "Test pricelist - Flashes - Fujifilm EF-X500"}, {"pk": 55, "display": "Test pricelist - Flashes - Panasonic Lumix DMW-FL580L"}, {"pk": 56, "display": "Test pricelist - Accessories - Manfrotto MT055XPRO3 Tripod"}, {"pk": 57, "display": "Test pricelist - Accessories - Peak Design Everyday Backpack 20L"}, {"pk": 58, "display": "Test pricelist - Accessories - Sandisk Extreme Pro 128GB SDXC"}, {"pk": 59, "display": "Test pricelist - Accessories - Rode VideoMic Pro+"}, {"pk": 60, "display": "Test pricelist - Accessories - Godox AD200Pro TTL Pocket Flash Kit"}, {"pk": 61, "display": "My first pricelist 2nd time - Cameras - Canon EOS R5"}, {"pk": 62, "display": "My first pricelist 2nd time - Cameras - Nikon Z7 II"}, {"pk": 63, "display": "My first pricelist 2nd time - Cameras - Sony A7R IV"}, {"pk": 64, "display": "My first pricelist 2nd time - Cameras - Fujifilm X-T4"}, {"pk": 65, "display": "My first pricelist 2nd time - Cameras - Panasonic Lumix S1R"}, {"pk": 66, "display": "My first pricelist 2nd time - Lenses - Canon RF 24-70mm f/2.8L IS USM"}, {"pk": 67, "display": "My first pricelist 2nd time - Lenses - Nikon Z 24-70mm f/2.8 S"}, {"pk": 68, "display": "My first pricelist 2nd time - Lenses - Sony FE 24-70mm f/2.8 GM"}, {"pk": 69, "display": "My first pricelist 2nd time - Lenses - Fujifilm XF 16-55mm f/2.8 R LM WR"}, {"pk": 70, "display": "My first pricelist 2nd time - Lenses - Panasonic Lumix S PRO 24-70mm f/2.8"}, {"pk": 71, "display": "My first pricelist 2nd time - Flashes - Canon Speedlite 600EX II-RT"}, {"pk": 72, "display": "My first pricelist 2nd time - Flashes - Nikon SB-5000 AF Speedlight"}, {"pk": 73, "display": "My first pricelist 2nd time - Flashes - Sony HVL-F60RM"}, {"pk": 74, "display": "My first pricelist 2nd time - Flashes - Fujifilm EF-X500"}, {"pk": 75, "display": "My first pricelist 2nd time - Flashes - Panasonic Lumix DMW-FL580L"}, {"pk": 76, "display": "My first pricelist 2nd time - Accessories - Manfrotto MT055XPRO3 Tripod"}, {"pk": 77, "display": "My first pricelist 2nd time - Accessories - Peak Design Everyday Backpack 20L"}, {"pk": 78, "display": "My first pricelist 2nd time - Accessories - Sandisk Extreme Pro 128GB SDXC"}, {"pk": 79, "display": "My first pricelist 2nd time - Accessories - Rode VideoMic Pro+"}, {"pk": 80, "display": "My first pricelist 2nd time - Accessories - Godox AD200Pro TTL Pocket Flash Kit"}, {"pk": 81, "display": "Test pricelist - Cameras - Canon EOS R5"}, {"pk": 82, "display": "Test pricelist - Cameras - Nikon Z7 II"}, {"pk": 83, "display": "Test pricelist - Cameras - Sony A7R IV"}, {"pk": 84, "display": "Test pricelist - Cameras - Fujifilm X-T4"}, {"pk": 85, "display": "Test pricelist - Cameras - Panasonic Lumix S1R"}, {"pk": 86, "display": "Test pricelist - Lenses - Canon RF 24-70mm f/2.8L IS USM"}, {"pk": 87, "display": "Test pricelist - Lenses - Nikon Z 24-70mm f/2.8 S"}, {"pk": 88, "display": "Test pricelist - Lenses - Sony FE 24-70mm f/2.8 GM"}, {"pk": 89, "display": "Test pricelist - Lenses - Fujifilm XF 16-55mm f/2.8 R LM WR"}, {"pk": 90, "display": "Test pricelist - Lenses - Panasonic Lumix S PRO 24-70mm f/2.8"}, {"pk": 91, "display": "Test pricelist - Flashes - Canon Speedlite 600EX II-RT"}, {"pk": 92, "display": "Test pricelist - Flashes - Nikon SB-5000 AF Speedlight"}, {"pk": 93, "display": "Test pricelist - Flashes - Sony HVL-F60RM"}, {"pk": 94, "display": "Test pricelist - Flashes - Fujifilm EF-X500"}, {"pk": 95, "display": "Test pricelist - Flashes - Panasonic Lumix DMW-FL580L"}, {"pk": 96, "display": "Test pricelist - Accessories - Manfrotto MT055XPRO3 Tripod"}, {"pk": 97, "display": "Test pricelist - Accessories - Peak Design Everyday Backpack 20L"}, {"pk": 98, "display": "Test pricelist - Accessories - Sandisk Extreme Pro 128GB SDXC"}, {"pk": 99, "display": "Test pricelist - Accessories - Rode VideoMic Pro+"}, {"pk": 100, "display": "Test pricelist - Accessories - Godox AD200Pro TTL Pocket Flash Kit"}]'}
+
+
+
+<div>
+    <label for="id_name">Name:</label>
+
+
+
+<input type="text" name="name" value="Prvi" maxlength="255" id="id_name">
+    
+</div>
+
+  <div>
+    <label for="id_comment">Comment:</label>
+
+
+
+<input type="text" name="comment" value="List_c" maxlength="500" id="id_comment">
+    
+</div>
+
+  <div>
+    <label for="id_extra_costs">Extra costs:</label>
+
+
+
+<input type="number" name="extra_costs" value="120" step="0.01" id="id_extra_costs">
+    
+</div>
+
+  <div>
+    <label for="id_extra_costs_currency">Extra costs currency:</label>
+
+
+
+<input type="text" name="extra_costs_currency" value="USD" maxlength="10" id="id_extra_costs_currency">
+    
+      
+    
+</div>
+<input type="hidden" name="form-TOTAL_FORMS" value="1" id="id_form-TOTAL_FORMS"><input type="hidden" name="form-INITIAL_FORMS" value="0" id="id_form-INITIAL_FORMS"><input type="hidden" name="form-MIN_NUM_FORMS" value="0" id="id_form-MIN_NUM_FORMS"><input type="hidden" name="form-MAX_NUM_FORMS" value="1000" id="id_form-MAX_NUM_FORMS"><div>
+    <label for="id_form-0-pricelist_entry">Pricelist entry:</label>
+
+
+<ul class="errorlist"><li>Select a valid choice. That choice is not one of the available choices.</li></ul>
+<select name="form-0-pricelist_entry" aria-invalid="true" id="id_form-0-pricelist_entry">
+  <option value="">---------</option>
+
+</select>
+    
+</div>
+
+  <div>
+    <label for="id_form-0-quantity">Quantity:</label>
+
+
+
+<input type="number" name="form-0-quantity" value="1" id="id_form-0-quantity">
+    
+</div>
+
+  <div>
+    <label for="id_form-0-comment">Comment:</label>
+
+
+
+<input type="text" name="form-0-comment" value="Entry_c" maxlength="500" id="id_form-0-comment">
+    
+</div>
+
+  <div>
+    <label for="id_form-0-extra_costs">Extra costs:</label>
+
+
+
+<input type="number" name="form-0-extra_costs" value="99" step="0.01" id="id_form-0-extra_costs">
+    
+</div>
+
+  <div>
+    <label for="id_form-0-person">Person:</label>
+
+
+
+<input type="text" name="form-0-person" value="Jakob" maxlength="100" id="id_form-0-person">
+    
+      <input type="hidden" name="form-0-id" id="id_form-0-id">
+    
+</div>
+
+
+
+
+
+class ListForm(forms.ModelForm):
+    class Meta:
+        model = List
+        fields = ['name', 'comment', 'extra_costs', 'extra_costs_currency']
+
+class ListEntryForm(forms.ModelForm):
+    pricelist_entry = forms.ModelChoiceField(queryset=PricelistEntry.objects.none())
+
+    class Meta:
+        model = ListEntry
+        fields = ['pricelist_entry', 'quantity', 'comment', 'extra_costs', 'person']
+
+    def __init__(self, *args, **kwargs):
+        user = kwargs.pop('user', None)
+        super().__init__(*args, **kwargs)
+        if user:
+            queryset = PricelistEntry.objects.filter(pricelist__user=user)
+            self.fields['pricelist_entry'].queryset = queryset
+            self.fields['pricelist_entry'].choices = [
+                (entry.pk, f"{entry.pricelist.pricelist_name} - {entry.group_name or 'No Group'} - {entry.item_name} - {entry.price} {entry.currency}")  # Display value
+                for entry in queryset
+            ]
+
+class BaseListEntryFormSet(BaseModelFormSet):
+    def __init__(self, *args, **kwargs):
+        self.user = kwargs.pop('user', None)
+        super().__init__(*args, **kwargs)
+        for form in self.forms:
+            form.__init__(*args, user=self.user, **kwargs)
+
+ListEntryFormSet = modelformset_factory(ListEntry, form=ListEntryForm, formset=BaseListEntryFormSet, extra=1)
+
+
+
+
+@login_required
+def new_list(request):
+    ListEntryFormSet = modelformset_factory(ListEntry, form=ListEntryForm, extra=1)
+    pricelist_entries = PricelistEntry.objects.filter(pricelist__user=request.user)
+    
+    if request.method == 'POST':
+        form = ListForm(request.POST)
+        formset = ListEntryFormSet(request.POST, queryset=PricelistEntry.objects.none())
+        if form.is_valid() and formset.is_valid():
+            new_list = form.save(commit=False)
+            new_list.user = request.user
+            new_list.save()
+            for form in formset:
+                list_entry = form.save(commit=False)
+                list_entry.list = new_list
+                list_entry.save()
+            return redirect('some_view_name')
+    else:
+        form = ListForm()
+        formset = ListEntryFormSet(queryset=PricelistEntry.objects.none())
+        for form in formset:
+            form.fields['pricelist_entry'].queryset = pricelist_entries
+    
+    pricelist_entries_json = json.dumps([
+        {
+            'pk': entry.pk,
+            'display': f"{entry.pricelist.pricelist_name} - {entry.group_name or 'No Group'} - {entry.item_name}"
+        }
+        for entry in pricelist_entries
+    ])
+    
+    return render(request, 'new_list.html', {
+        'form': form,
+        'formset': formset,
+        'pricelist_entries_json': pricelist_entries_json
+    })
+
+
+
+
+
+    <!-- templates/new_list.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Create New List</h2>
+<form method="post">
+    {% csrf_token %}
+    <div class="form-group">
+        {{ form.name.label_tag }} {{ form.name }}
+    </div>
+    <div class="form-group">
+        {{ form.comment.label_tag }} {{ form.comment }}
+    </div>
+    <div class="form-group">
+        {{ form.extra_costs.label_tag }} {{ form.extra_costs }}
+    </div>
+    <div class="form-group">
+        {{ form.extra_costs_currency.label_tag }} {{ form.extra_costs_currency }}
+    </div>
+    <h3>Select Pricelist Entries</h3>
+    {{ formset.management_form }}
+    <div id="formset-container">
+        {% for form in formset %}
+        <div class="form-row">
+            {{ form.as_p }}
+        </div>
+        {% endfor %}
+    </div>
+    <button type="submit">Create List</button>
+</form>
+<button type="button" id="add-entry">Add Another Entry</button>
+
+<script>
+    var pricelistEntries = JSON.parse('{{ pricelist_entries_json|escapejs }}');
+
+    document.getElementById('add-entry').addEventListener('click', function () {
+        var formsetContainer = document.getElementById('formset-container');
+        var totalForms = document.getElementById('id_form-TOTAL_FORMS');
+        var currentFormCount = parseInt(totalForms.value);
+        var newForm = formsetContainer.querySelectorAll('.form-row')[0].cloneNode(true);
+        var formRegex = RegExp(`form-(\\d){1}-`, 'g');
+        newForm.innerHTML = newForm.innerHTML.replace(formRegex, `form-${currentFormCount}-`);
+
+        // Update the dropdown options
+        var selectElement = newForm.querySelector('select');
+        selectElement.innerHTML = '';
+        pricelistEntries.forEach(function (entry) {
+            var option = document.createElement('option');
+            option.value = entry.pk;
+            option.text = entry.display;
+            selectElement.appendChild(option);
+        });
+
+        formsetContainer.appendChild(newForm);
+        totalForms.value = currentFormCount + 1;
+    });
+
+    // Populate the first dropdown
+    document.addEventListener('DOMContentLoaded', function () {
+        var firstSelectElement = document.querySelector('.form-row select');
+        firstSelectElement.innerHTML = '';
+        pricelistEntries.forEach(function (entry) {
+            var option = document.createElement('option');
+            option.value = entry.pk;
+            option.text = entry.display;
+            firstSelectElement.appendChild(option);
+        });
+    });
+</script>
+{% endblock %}

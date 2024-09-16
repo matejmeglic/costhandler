@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Your Pricelists{% endblock %}
+
+{% block content %}
+<h2>Your Active Pricelists</h2>
+<ul>
+    {% for pricelist in pricelists %}
+    <li>
+        <a href="{% url 'pricelist_detail' pricelist.id %}">
+            {{ pricelist.pricelist_name }}
+        </a>
+    </li>
+    {% empty %}
+    <li>No active pricelists found.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

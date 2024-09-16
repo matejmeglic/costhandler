@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<h2>Profile</h2>
+<p>Welcome, {{ user.username }}!</p>
+
+<h2>Your Pricelists</h2>
+<form method="post">
+    {% csrf_token %}
+    <table>
+        <thead>
+            <tr>
+                <th>Pricelist Name</th>
+                <th>Active</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for pricelist in pricelists %}
+            <tr>
+                <td>{{ pricelist.pricelist_name }}</td>
+                <td>
+                    <input type="checkbox" name="pricelist_{{ pricelist.id }}_is_active" {%if pricelist.is_active%}checked{% endif %}>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="2">No pricelists found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <button type="submit">Save Changes</button>
+</form>
+{% endblock %}

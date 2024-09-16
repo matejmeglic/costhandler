@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Create New List{% endblock %}
+
+{% block content %}
+<h1>Create a New List</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <h2>List Details</h2>
+    {{ list_form.as_p }}
+
+    <h2>List Entries</h2>
+    {{ list_entry_formset.management_form }}
+    {% for form in list_entry_formset %}
+    <div class="list-entry-form">
+        <p>
+            {{ form.pricelist_entry.label_tag }}<br>
+            {{ form.pricelist_entry }}
+        </p>
+        {{ form.quantity.label_tag }} {{ form.quantity }}<br>
+        {{ form.extra_costs.label_tag }} {{ form.extra_costs }}<br>
+        {{ form.person.label_tag }} {{ form.person }}<br>
+        {{ form.comment.label_tag }} {{ form.comment }}<br>
+        {% if not form.is_bound %}
+        <input type="hidden" name="{{ form.prefix }}-DELETE" value="false">
+        {% endif %}
+    </div>
+    {% endfor %}
+
+    <button type="submit" class="button">Save List</button>
+    <br /><br /><br /><br />
+</form>
+{% endblock %}

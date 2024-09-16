@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title %}My Site{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'apps/styles.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                {% if user.is_authenticated %}
+                <li><a href="{% url 'new_list' %}">New Spec</a></li>
+                <li><a href="{% url 'list_overview' %}">Specs</a></li>
+                <li><a href="{% url 'pricelists_list' %}">Pricelists</a></li> <!-- New menu item added here -->
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                <li><a href="{% url 'upload_pricelist' %}" target="_blank">Upload Pricelist</a></li>
+                <li>
+                    <a href="#" onclick="document.getElementById('logout-form').submit();">Logout</a>
+                    <form id="logout-form" action="{% url 'logout' %}" method="post" style="display: none;">
+                        {% csrf_token %}
+                    </form>
+                </li>
+                <li>Welcome, {{ user.username }} ({{ user.email }})!</li>
+                {% else %}
+                <li><a href="{% url 'register' %}">Register</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2023 My Site</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!-- templates/list_overview.html -->
+{% extends "base.html" %}
+
+{% block title %}List Overview{% endblock %}
+
+{% block content %}
+<h1>List Overview</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>List Name</th>
+            <th>Created Date</th>
+            <th>Total Cost</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for list_total in list_totals %}
+        <tr>
+            <td>{{ list_total.list.name }}</td>
+            <td>{{ list_total.list.created_dt }}</td>
+            <td>{{ list_total.total_cost }} {{ list_total.list.extra_costs_currency }}</td>
+            <td><a href="{% url 'list_detail' list_id=list_total.list.id %}">View Details</a></td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="4">No lists available.</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

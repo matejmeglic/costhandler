@@ -1,0 +1,62 @@
+# Python Bytecode
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Django Stuff
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+db.sqlite3
+/static/
+/media/
+/.env
+
+# Django Migrations
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# MySQL
+*.sql
+*.sql.gz
+
+# Docker
+docker-compose.override.yml
+Dockerfile
+docker-compose.yml
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Local Environment
+*.env
+.env.*
+.venv/
+venv/
+ENV/
+env/
+
+# Coverage Reports
+.coverage
+*.cover
+*.coverage
+nosetests.xml
+coverage.xml
+*.cover
+*.log

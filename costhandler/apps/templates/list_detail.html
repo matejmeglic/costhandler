@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}List Detail{% endblock %}
+
+{% block content %}
+<h1>List Detail</h1>
+
+<h2>List: {{ list_instance.name }}</h2>
+<p><strong>Comment:</strong> {{ list_instance.comment }}</p>
+<p><strong>Extra Costs:</strong> {{ list_instance.extra_costs }} {{ currency }}</p>
+
+<h2>List Entries</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Extra Costs</th>
+            <th>Person</th>
+            <th>Comment</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for entry in list_entries %}
+        <tr>
+            <td>{{ entry.pricelist_entry.item_name }}</td>
+            <td>{{ entry.quantity }}</td>
+            <td>{{ entry.extra_costs }}</td>
+            <td>{{ entry.person|default:"Unknown" }}</td>
+            <td>{{ entry.comment }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h2>Total Cost of List: {{ total_cost }} {{ currency }}</h2>
+
+<h2>Breakdown by Person</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Person</th>
+            <th>Total Cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for person, cost in person_breakdown %}
+        <tr>
+            <td>{{ person }}</td>
+            <td>{{ cost }} {{ currency }}</td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="2">No breakdown</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

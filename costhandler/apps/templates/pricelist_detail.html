@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Pricelist Details{% endblock %}
+
+{% block content %}
+<h2>Pricelist: {{ pricelist.pricelist_name }}</h2>
+<p><strong>Description:</strong> {{ pricelist.description }}</p>
+
+<h2>Pricelist Entries</h2>
+<ul>
+    {% for entry in pricelist_entries %}
+    <li>{{ entry.group_name }} - {{ entry.item_name }} - {{ entry.price }} {{ entry.currency }} - {{ entry.unit }} - {{
+        entry.min_duration }}</li>
+    {% empty %}
+    <li>No entries found for this pricelist.</li>
+    {% endfor %}
+</ul>
+{% endblock %}
