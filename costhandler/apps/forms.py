@@ -44,13 +44,14 @@ class ListEntryForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         pricelist_entries = kwargs.pop('pricelist_entries', PricelistEntry.objects.none())
         super().__init__(*args, **kwargs)
-        # Update the queryset for pricelist_entry
-        self.fields['pricelist_entry'].queryset = pricelist_entries
+        # Filter the queryset to only include entries from active pricelists
+        self.fields['pricelist_entry'].queryset = pricelist_entries.filter(pricelist__is_active=True)
         # Set choices explicitly, including the empty choice
         self.fields['pricelist_entry'].choices = [('', '---')] + [
             (entry.pk, f"{entry.pricelist.pricelist_name} - {entry.group_name or 'No Group'} - {entry.item_name} - {entry.price} {entry.currency}") 
-            for entry in pricelist_entries
+            for entry in pricelist_entries if entry.pricelist.is_active
         ]
+
 
 
 
