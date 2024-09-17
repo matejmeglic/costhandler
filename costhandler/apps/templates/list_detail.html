@@ -14,8 +14,10 @@
     <thead>
         <tr>
             <th>Item</th>
+            <th>Price</th>
             <th>Quantity</th>
             <th>Extra Costs</th>
+            <th>Total Price per Item</th>
             <th>Person</th>
             <th>Comment</th>
         </tr>
@@ -24,10 +26,12 @@
         {% for entry in list_entries %}
         <tr>
             <td>{{ entry.pricelist_entry.item_name }}</td>
+            <td>{{ entry.pricelist_entry.price }} {{ currency }}</td>
             <td>{{ entry.quantity }}</td>
-            <td>{{ entry.extra_costs }}</td>
-            <td>{{ entry.person|default:"Unknown" }}</td>
-            <td>{{ entry.comment }}</td>
+            <td>{{ entry.extra_costs|default_if_none:"0" }} {{ currency }}</td> <!-- Display 0 if Extra Costs is None -->
+            <td>{{ entry.total_cost }} {{ currency }}</td>
+            <td>{{ entry.person|default_if_none:""|yesno:"|None" }}</td> <!-- Display empty string for 'Unknown' or None person -->
+            <td>{{ entry.comment|default_if_none:"" }}</td> <!-- Display empty string for None comments -->
         </tr>
         {% endfor %}
     </tbody>
@@ -46,7 +50,7 @@
     <tbody>
         {% for person, cost in person_breakdown %}
         <tr>
-            <td>{{ person }}</td>
+            <td>{{ person|default_if_none:""|yesno:"|Unknown" }}</td> <!-- Display empty string for 'Unknown' or None person in breakdown -->
             <td>{{ cost }} {{ currency }}</td>
         </tr>
         {% empty %}

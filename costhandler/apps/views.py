@@ -174,7 +174,7 @@ def list_detail(request, list_id):
     
     # Calculate total cost
     total_cost = sum(
-        entry.pricelist_entry.price * entry.quantity + (entry.extra_costs or 0)
+        entry.total_cost  # Use the total_cost property from ListEntry
         for entry in list_entries
     )
 
@@ -184,7 +184,7 @@ def list_detail(request, list_id):
         person = entry.person or 'Unknown'
         if person not in person_breakdown:
             person_breakdown[person] = 0
-        person_breakdown[person] += entry.pricelist_entry.price * entry.quantity + (entry.extra_costs or 0)
+        person_breakdown[person] += entry.total_cost
 
     # Sort breakdown by value in descending order, with "Unknown" last
     sorted_person_breakdown = sorted(
@@ -201,6 +201,7 @@ def list_detail(request, list_id):
     }
 
     return render(request, 'list_detail.html', context)
+
 
 @login_required
 def list_overview(request):
